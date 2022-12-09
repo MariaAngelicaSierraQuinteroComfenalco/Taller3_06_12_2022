@@ -1,16 +1,19 @@
 addEventListener(`DOMContentLoaded`, (e)=>{
     
-    //Realizar un programa que permita escribir los 100 primeros pares.
-    
-    function numeros_pares(){
-    for(let i=1;i <=100;i++){
-        if(i%2==0){
-            console.log(i);
-            }
+    let suma = 0;
+    let mul = 1; 
+    let num= Number(prompt("cuantos numeros ingresaras",0)); 
+    for (i=0; i < num; i++) {
+        let n= Number(prompt("Dame un numero",0)); 
+        if (n % 2 == 0) {
+            suma=suma+n;
+            
+        }else   {
+            mul=mul*n;
         }
     
     }
-    
-    numeros_pares();
-    
+
+    console.log("la suma de los pares es: "+suma);
+    console.log("la multiplicacion de los impares es: "+mul);
     })

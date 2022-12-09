@@ -1,10 +1,27 @@
 addEventListener(`DOMContentLoaded`, (e)=>{
     
-    //Realizar un programa que pueda sumar dos números leídos por teclado y escribir el resultado
-    let num1 = Number(prompt("dame un numero",0));
-    let num2 = Number(prompt("Dame un numero",0)); 
+    //Realizar un programa de procesos en el que se almacenen 3 números en 3 variables A, B y C. 
+    //El diagrama debe decidir cual es el mayor y cual es el menor
+    let A = Number(prompt("dame un nuemro",0));
+    let B = Number(prompt("Dame un numero",0)); 
+    let C = Number(prompt("Dame un numero",0)); 
+    let menor=0;
+    let mayor=0;
+        if(A<=B && A<=C){
+            menor=A
+        }else if(B<=A && B<=C){
+            menor=B
+        }else{
+             menor=C
+        }
     
-    let suma=num1+num2
+        if(A>=B && A>=C){
+             mayor=A
+        }else if(B>=A && B>=C){
+               mayor=B
+        }else{
+             mayor=C
+        }
+    document.querySelector("body").innerHTML = "el numero mayor es: "+mayor+ "  el numero menor es: "+menor
     
-    document.querySelector("body").innerHTML = "la suma de  los dos numeros es :  "+suma
     })

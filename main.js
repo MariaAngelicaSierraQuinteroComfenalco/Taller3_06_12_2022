@@ -1,19 +1,19 @@
 addEventListener(`DOMContentLoaded`, (e)=>{
     
-    let suma = 0;
-    let mul = 1; 
-    let num= Number(prompt("cuantos numeros ingresaras",0)); 
-    for (i=0; i < num; i++) {
-        let n= Number(prompt("Dame un numero",0)); 
-        if (n % 2 == 0) {
-            suma=suma+n;
-            
-        }else   {
-            mul=mul*n;
+  let suma=0
+  let N= Number(prompt("Dame un numero",0)); 
+  let D= Number(prompt("Dame un numero",0)); 
+  if (N % D == 0) { 
+    for(i=1;i=N-1;i++){
+        if(N%i==0){
+           suma=suma+i   
         }
-    
     }
-
-    console.log("la suma de los pares es: "+suma);
-    console.log("la multiplicacion de los impares es: "+mul);
+    if(suma==N)  {
+    document.querySelector("body").innerHTML = " es un numero perfecto"
+        } else   {
+    document.querySelector("body").innerHTML =" no es un numero perfecto"
+        }
+}
+    
     })

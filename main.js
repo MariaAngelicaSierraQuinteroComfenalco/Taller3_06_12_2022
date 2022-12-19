@@ -2,7 +2,7 @@ addEventListener(`DOMContentLoaded`, (e)=>{
     
   let suma=0
   let N= Number(prompt("Dame un numero",0)); 
-  for(i=1;i=N-1;i++){
+  for(let i=1;i<N; i++){
      if(N%i==0){
         suma=suma+i   
         }
